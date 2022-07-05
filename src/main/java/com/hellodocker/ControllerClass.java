@@ -8,7 +8,7 @@ public class ControllerClass {
 		@GetMapping("/hellodocker")
 		public String helloWorld() {
 			
-			return "Hello Docker welcome ";
+			return "Hello!! Welcome to world of jenkins with docker";
 		}
 
 }
