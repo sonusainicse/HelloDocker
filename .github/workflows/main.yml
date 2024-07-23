@@ -5,7 +5,7 @@ on:
  workflow_dispatch:
 jobs: 
   maven bulid and docker build 
-  run-on: ubuntu-latest
+  runs-on: ubuntu-latest
   steps:
      -name: Checkout Repository
       uses: actions/checkout@v3
