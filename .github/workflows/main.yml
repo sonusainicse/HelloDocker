@@ -3,10 +3,9 @@ on:
  push:
    branches : [main]
  workflow_dispatch:
-jobs: 
-  maven bulid and docker build 
-runs-on: ubuntu-latest
-steps:
+jobs:  
+ runs-on: ubuntu-latest
+  steps:
     -
      name: Checkout Repository
      uses: actions/checkout@v3  
