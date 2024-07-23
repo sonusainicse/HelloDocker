@@ -13,7 +13,7 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@main
     - name: SonarQube Scan
-      uses: sijomc/sonarscan-action@main
+      uses: kitabisa/sonarqube-action@main
       with:
         host: ${{ secrets.SONARQUBE_HOST }}
         login: ${{ secrets.SONARQUBE_TOKEN }}
