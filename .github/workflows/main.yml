@@ -5,12 +5,12 @@ on:
  workflow_dispatch:
 jobs: 
   maven bulid and docker build 
-  runs-on: ubuntu-latest
-  steps:
+runs-on: ubuntu-latest
+steps:
      -name: Checkout Repository
-      uses: actions/checkout@v3
+     uses: actions/checkout@v3
       
-     -name: SonarQube Scan
+      -name: SonarQube Scan
       uses: sijomc/sonarscan-action@main
        with:
         host: ${{ secrets.SONARQUBE_HOST }}
